@@ -1,0 +1,251 @@
+/**********************************
+GENERAL
+***********************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "American Typewriter", "Segoe Print", sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+a {
+    text-decoration: none;
+    word-spacing: 4px;
+}
+
+p {
+   text-align: left;
+}
+
+img {
+    max-width: 61%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-width: .05em;
+    border-color: lightslategrey;
+    border-radius: 200px;
+    opacity: 0.8;
+}
+
+.dropdown-content
+{
+    display: none;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    position: absolute;
+    background-color:#FFE4C4;
+    width: 100%;
+    overflow: visible;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 5px 0;
+    width: 100%;
+}
+
+#logo {
+    
+    text-align: center;
+}
+
+h1 {
+    font-family: "American Typewriter", "Segoe Print", sans-serif;
+    font-size: 4.5em;
+    font-weight: bolder;
+    line-height: 1.10em;
+}
+
+h2 {
+    font-size: .75em;
+    margin: -5px 0 0;
+    font-weight: normal;
+}
+
+h3,
+h4 {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 5px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+nav li:hover
+    .dropdown-content
+    {
+    display: block
+}
+
+nav a{
+    margin: 30px;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding 5px 5px;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+/**********************************
+PAGE: RESURS
+***********************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7
+}
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 30px;
+}
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+
+/**********************************
+COLORS
+***********************************/
+
+
+/* site body */
+
+body {
+    background-color: #FFCC99;
+}
+/* nav background on mobile */
+
+
+h1,
+h2 {
+    color: #fff;
+}
+
+
+/* links */
+
+a {
+    color: #FFCC99;
+}
+
+
+/* nav link */
+
+nav a,
+nav a:visited {
+    color: #666666;
+}
+
+/* selected nav link */
+
+nav a:hover {
+    text-decoration: underline;
+    
+}
