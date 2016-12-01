@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--to get the latest version of IE-->
+    <title>Todo Path - pave the way to your goals</title>
+    <!--The integrity and crossorigin attributes are for SRI - Subresource integrity - which let the browser verify if the file has been manipulated in any way when fetching the file from a third-party source like a content delivery network.-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/EricmeyerCssReset.css">
+    <link rel="stylesheet" type="text/css" href="../css/user_stylesheet.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <section class="container-fluid">
+            <section class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Todo Path</a>
+            </section>
+            <nav>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.linkedin.com/in/christian-fujimaki-ahlsen-77701766?trk=nav_responsive_tab_profile" target="_blank"><span class="fa fa-linkedin"></span> Visit me here</a></li>
+                </ul>
+            </div>
+            </nav>
+        </section>
+    </nav>
+    <!--landing part of page-->
+    <section class="first-wrapper">
+        <section class="container-fluid">
+            <section class="row second-row">
+                <section class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
+                    <span id="scrolldown" class="glyphicon glyphicon-chevron-down"></span>
+                </section>
+            </section>
+        </section>
+    </section>
+    <!--second part of page-->
+    <section class="second-wrapper ">
+        <section class="container-fluid ">
+            <section class="row ">
+                <section class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 ">
+                    <h2 id="todos-header">Your Todos</h2>
+                    <div class="input-group">
+                        <span data-toggle="tooltip" data-placement="top" title="This toggles all your todos if present" class="input-group-addon ">
+                            <input id="checkbox" type="checkbox">
+                        </span>
+                        
+                        <input id="todoinputfield" type="text" class="form-control bg-danger" aria-label="... " placeholder="your goal..." onkeypress="return TodoApp.TodoControl.addTodo(event)">
+                    </div>
+                    <ul id="displaytodolist"></ul>
+                    <!--content(todo list content) will be added to this ul element dynamically through javascript-->
+                </section>
+            </section>
+            <!--end of row-->
+        </section>
+        <!--end of container-->
+    </section>
+    <div class="modal fade" id="todo-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Todo title</h3>
+                </div>
+                <div class="modal-body">
+                    <h4><small>Write a description of your todo...</small></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Save changes and close window</button>
+                    <button id="modaltogglebutton" type="button" class="btn btn-primary">Toggle task completed</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+<footer class="container-fluid bg-4 text-center">
+  <p>TodoPath&copy;</p> <a href="#"><span class="glyphicon glyphicon-home"></span></a>
+</footer>
+
+
+    <!--Code Libraries-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
+    <script type="text/javascript" src="../js/todoapp.js"></script>
+</body>
+
+</html>

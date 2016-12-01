@@ -1,0 +1,164 @@
+
+/* General styling*/
+*{
+  box-sizing: border-box;
+
+}
+
+html {
+  height: 100%; 
+  background-color: #5a2b2b;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,6);
+  box-shadow: inset 0 0 100px rgba(0,0,0,6);
+}
+
+body {
+  padding-top: 50px;
+  font-family: "Courier New", Helvetica , serif; 
+  height: 100%;
+  width: 100%;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+ul{
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+li{
+  display: list-item;
+}
+
+footer{
+  font-size: 2em;
+  color: white;
+}
+
+/* custom classes and id:s*/
+.first-wrapper {
+  background-image: url("../img/Journey.svg");
+  background-size: cover;
+  background-color: #ff66;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,5);
+}
+
+.second-wrapper {
+  padding-top: 5%;
+  background-color: #5a2b2b;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,6);
+  box-shadow: inset 0 0 100px rgba(0,0,0,6);
+}
+.second-row {
+    margin-top: 80vh;
+    font-size: 40px;
+}
+
+#scrolldown {
+  font-size: 1em;
+}
+
+#slogan{
+  font-size: .25em;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+
+#buttoncontainerelement{
+  position: absolute;
+  left: 90%;
+  top: 10%;
+  display: inline-block;
+}
+
+#removebuttonelement{
+  margin: 1px;
+}
+
+#editbuttonelement{
+  margin: 1px;
+}
+
+#todos-header{
+  font-size: 5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Overridden bootstrap classes*/
+
+.glyphicon-chevron-down:hover {
+  color: white;
+  padding-top: 5px;
+}
+
+.navbar{
+  min-height: 57px;
+}
+
+.list-group{
+  margin: 5px;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       Internet Explorer 5.5+ */
+}
+
+.list-group-item{ 
+  border: 1px solid black;
+  font-weight: thin;
+}
+
+.lead{
+  font-size: 250%;
+  color: white;
+}
+
+/**** custom media queries ****/
+@media (max-width: 1200px)
+{
+  .first-wrapper {
+    background-image: url("../img/Journey.svg");
+    background-size: 100% 100%;
+  }
+    #buttoncontainerelement{
+    left: 83%;
+  }
+
+}
+
+@media (max-width: 500px)
+{
+  .first-wrapper {
+    background-image: url("../img/Mountain.svg");
+    background-size: cover;
+  }
+  #buttoncontainerelement{
+    left: 80%;
+  }
+}
+
+/*@media (max-width: 970px)
+{
+  .first-wrapper {
+    background-image: url("../img/background.svg");
+    background-size: cover;
+  }
+  #buttoncontainerelement{
+    left: 90%;
+  }
+}*/
+
+
+
+
