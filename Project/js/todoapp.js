@@ -1,3 +1,4 @@
+/**** The App/model object ****/
 let TodoApp = {
 
     todos: [],
@@ -16,6 +17,7 @@ let TodoApp = {
         this.TodoView.displayTodos();
     },
 
+    /****Creates the view dynamically****/
     TodoView: {
 
         displayTodos: function() {
@@ -80,7 +82,8 @@ let TodoApp = {
             modalBodyText.setAttribute("contentEditable", "true");
             ulElement.appendChild(documentFragment);
         },
-
+        
+        /****Event Delegation of clicks to parent ul element. listen for clicks on li children****/
         setUpEventListeners: function() {
             let todos = TodoApp.todos;
             let dispatcher = TodoApp.TodoControl;
@@ -88,7 +91,6 @@ let TodoApp = {
             let modalTitle = document.querySelector(".modal-title");
             let ulElement = document.querySelector("#displaytodolist");
 
-            /* Event Delegation of clicks to parent ul element. listen for clicks on li children*/
             ulElement.addEventListener("click", function(event) {
 
                 let target = event.target;
@@ -133,10 +135,10 @@ let TodoApp = {
         }
     },
 
+    /**** The control object delegates events to the model object function (TodoApp.addTodo)****/
     TodoControl: {
         addTodo: function(e) {
             let todoInputField = document.querySelector("#todoinputfield");
-            let todos = TodoApp.todos;
             if (!e) {
                 e = window.event;
             }
@@ -151,15 +153,15 @@ let TodoApp = {
                 }
                 else
                     todoInputField.classList.add("bg-danger");
-
             }
         },
 
+        /**** Delegates the delete todo action to the model object function(Todoapp.deleteTodo)****/
         deleteTodo: function(position) {
             TodoApp.deleteTodo(position);
         }
     }
 
 };
-
+/**** Calls the mentioned method the be able to listen for the click events on the ul****/
 TodoApp.TodoView.setUpEventListeners();

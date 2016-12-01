@@ -67,7 +67,6 @@ footer{
 }
 
 #slogan{
-  font-size: .25em;
   font-weight: bolder;
   word-wrap: break-word;
 }
@@ -99,6 +98,7 @@ footer{
 .glyphicon-chevron-down:hover {
   color: white;
   padding-top: 5px;
+  cursor: pointer;
 }
 
 .navbar{
@@ -147,17 +147,6 @@ footer{
     left: 80%;
   }
 }
-
-/*@media (max-width: 970px)
-{
-  .first-wrapper {
-    background-image: url("../img/background.svg");
-    background-size: cover;
-  }
-  #buttoncontainerelement{
-    left: 90%;
-  }
-}*/
 
 
 

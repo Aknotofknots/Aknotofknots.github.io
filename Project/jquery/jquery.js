@@ -18,20 +18,16 @@ $(function() {
 
     /**** toggle one todo completed*****/
     $("#modaltogglebutton").on("click", function() {
-        $.each(app.todos, function(index, object) {
-            debugger;
-            if (app.todoParentElementId === index) {
-                $completed = object.completed ? true : false;
 
+        $.each(app.todos, function(index, object) {
+                $completed = object.completed ? true : false;
+                if(app.todoParentElementId === index) {
                 if (!$completed) {
                     object.completed = !object.completed;
                     $("#modaltogglebutton").addClass("btn-success");
-                    $("#displaytodolist").children().css("text-decoration", "line-through");
                 } else {
                     object.completed = !object.completed;
                     $("#modaltogglebutton").removeClass("btn-success");
-                    $("#displaytodolist").children().css("text-decoration", "none");
-
                 }
             }
         });
@@ -52,7 +48,7 @@ $(function() {
             $liElements = $("#displaytodolist").children().css("font-weight", "bold");
             $.each(app.todos, function(index, object) {
                 if (object.completed)
-                    $nrOfCompletedTodos++
+                    $nrOfCompletedTodos++;
 
                     if ($nrOfCompletedTodos === app.todos.length)
                         object.completed = false;
