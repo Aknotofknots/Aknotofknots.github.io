@@ -43,13 +43,12 @@ let TodoApp = {
                 contentElement.classList.add("list-group-item");
                 contentElement.id = "contentelement";
                 textContentElement.textContent = todo.todoText;
-                textContentElement.setAttribute("autofocus", "true");
 
                 buttonContainerElement.id = "buttoncontainerelement";
 
                 removeButtonElement.type = "button";
                 removeButtonElement.classList.add("btn");
-                removeButtonElement.classList.add("btn-xs");
+                removeButtonElement.classList.add("btn-sm");
                 removeButtonElement.classList.add("btn-danger");
                 removeButtonElement.id = "removebuttonelement";
 
@@ -57,7 +56,7 @@ let TodoApp = {
                 editButtonElement.setAttribute("data-toggle", "modal")
                 editButtonElement.setAttribute("data-target", "#todo-modal");
                 editButtonElement.classList.add("btn");
-                editButtonElement.classList.add("btn-xs");
+                editButtonElement.classList.add("btn-sm");
                 editButtonElement.classList.add("btn-success");
                 editButtonElement.classList.add("text-right");
                 editButtonElement.id = "editbuttonelement";

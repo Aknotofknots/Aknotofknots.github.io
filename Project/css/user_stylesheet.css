@@ -2,7 +2,6 @@
 /* General styling*/
 *{
   box-sizing: border-box;
-
 }
 
 html {
@@ -74,7 +73,7 @@ footer{
 #buttoncontainerelement{
   position: absolute;
   left: 90%;
-  top: 10%;
+  top: 5%;
   display: inline-block;
 }
 
@@ -137,14 +136,14 @@ footer{
 
 }
 
-@media (max-width: 500px)
+@media (max-width: 768px)
 {
   .first-wrapper {
     background-image: url("../img/Mountain.svg");
     background-size: cover;
   }
   #buttoncontainerelement{
-    left: 80%;
+    left: 83%;
   }
 }
 

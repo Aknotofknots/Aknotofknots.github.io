@@ -25,9 +25,11 @@ $(function() {
                 if (!$completed) {
                     object.completed = !object.completed;
                     $("#modaltogglebutton").addClass("btn-success");
+                    $(".list-group").eq(index).css("text-decoration", "line-through", "text-decoration-style", "dotted");
                 } else {
                     object.completed = !object.completed;
                     $("#modaltogglebutton").removeClass("btn-success");
+                    $(".list-group").eq(index).css("text-decoration", "none");
                 }
             }
         });
