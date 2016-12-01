@@ -14,5 +14,7 @@ I used Bootstrap and custom CSS to style the page, Javascript mostly for DOM-man
 ****
 [Reach me on linkedin](https://www.linkedin.com/in/christian-fujimaki-ahlsen-77701766?trk=nav_responsive_tab_profile)
 
+[Link to the project](https://aknotofknots.github.io/Project/views/index.html#)
+
 
 
