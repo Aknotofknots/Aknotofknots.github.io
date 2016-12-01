@@ -3,7 +3,7 @@
 # By Christian Ahlsén
 ======================
 ### School: Lernia
-### Educational Program: Frontend-Javasript Developer
+### Program: Frontend-Javasript Developer
 ### Course: HTML, CSS, Javascript and webstandards
 
 Purpose: make use of all the knowledge gained during the course.
