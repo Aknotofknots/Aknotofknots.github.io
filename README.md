@@ -16,5 +16,8 @@ I used Bootstrap and custom CSS to style the page, Javascript mostly for DOM-man
 
 [Link to the project](https://aknotofknots.github.io/Project/views/index.html#)
 
+# Contributions to project
+[github user: mow-github](https://github.com/mow-github)
+
 
 
