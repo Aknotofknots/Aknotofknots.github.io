@@ -6,7 +6,7 @@
 ### Program: Frontend-Javasript Developer
 ### Course: HTML, CSS, Javascript and webstandards
 
-Purpose: make use of all the knowledge gained during the course.
+Goal: make use of all the knowledge gained during the course.
 
 The technologies used in this course are HTML5, CSS3, Javascript, jQuery and Bootstrap.
 I used Bootstrap and custom CSS to style the page, Javascript mostly for DOM-manipulation and jQuery for effects.
