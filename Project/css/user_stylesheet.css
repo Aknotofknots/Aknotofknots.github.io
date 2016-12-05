@@ -57,12 +57,14 @@ footer{
   box-shadow: inset 0 0 100px rgba(0,0,0,6);
 }
 .second-row {
+  border: 1px solid black;
     margin-top: 80vh;
     font-size: 40px;
 }
 
 #scrolldown {
-  font-size: 1em;
+  border: 2px solid green;
+  font-size: 80%;
 }
 
 #slogan{
@@ -72,7 +74,7 @@ footer{
 
 #buttoncontainerelement{
   position: absolute;
-  left: 90%;
+  left: 85%;
   top: 5%;
   display: inline-block;
 }
@@ -136,15 +138,16 @@ footer{
 
 }
 
-@media (max-width: 768px)
+@media (max-width: 500px)
 {
   .first-wrapper {
     background-image: url("../img/Mountain.svg");
     background-size: cover;
   }
   #buttoncontainerelement{
-    left: 83%;
-  }
+    left: 72%;
+  },
+
 }
 
 
